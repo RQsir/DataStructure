@@ -1,18 +1,13 @@
-#include <stdio.h>
-#include "LinearList/LinearListAll.h"
-#include "LinkList/LinkListAll.h"
-#include "StaticLinkList/StaticLinkListAll.h"
-
-void linearListTest();
-void LinkListTest();
-void StaticLinkListTest();
+#include "main.h"
 
 int main() {
 
 //    linearListTest();
-    LinkListTest();
+//    LinkListTest();
 //    StaticLinkListTest();
-
+//    CircularLinkListTest();
+//    JosephusProblemTest();
+    HasLoopTest();
     return 0;
 }
 
@@ -94,4 +89,38 @@ void StaticLinkListTest(){
     SLinkListDel(L,6,&e);
     SLinkListDel(L,3,&e);
 
+}
+
+void CircularLinkListTest(){
+    CLinkList CLinkList = NULL;
+    CLinkListInit(&CLinkList);
+
+//    CLinkListInsert(&CLinkList,1,100);
+//    CLinkListInsert(&CLinkList,4,300);
+//    CLinkListInsert(&CLinkList,0,400);
+//    CLinkListInsert(&CLinkList,-1,500);
+//    CLinkListInsert(&CLinkList,-4,600);
+
+    int i = CLinkList_Search(CLinkList,8);
+
+    CLinkList_Del(&CLinkList,0);
+    CLinkList_Del(&CLinkList,1);
+    CLinkList_Del(&CLinkList,-1);
+    CLinkList_Del(&CLinkList,4);
+    CLinkList_Del(&CLinkList,-4);
+
+
+    int length = CLinkList_getLength(CLinkList);
+    printf("\nthe length of CLinkList is: %d",length);
+}
+
+void JosephusProblemTest(){
+    JosephusProblem();
+}
+
+void HasLoopTest(){
+    LinkList L = NULL;
+    LinkListCreateByTail(&L,10);
+//    HasLoop(L);
+    HasLoop2(L);
 }

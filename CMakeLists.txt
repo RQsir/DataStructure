@@ -40,4 +40,8 @@ add_executable(DataStructure
         StaticLinkList/StaticLinkList.h
         StaticLinkList/StaticLinkListAll.h
         BaseHeader.h
-        main.c LinkList/Examples/GetMiddleNode.c LinkList/Examples/GetMiddleNode.h CircularLinkList/CLinkList.c CircularLinkList/CLinkList.h)
+        main.c
+        LinkList/Examples/GetMiddleNode.c
+        LinkList/Examples/GetMiddleNode.h
+        CircularLinkList/CLinkListInit.c
+        CircularLinkList/CLinkListInit.h CircularLinkList/CLinkListAll.h CircularLinkList/CLinkList.h CircularLinkList/CLinkListInsert.c CircularLinkList/CLinkListInsert.h CircularLinkList/CLinkList_getLength.c CircularLinkList/CLinkList_getLength.h CircularLinkList/CLinkList_Del.c CircularLinkList/CLinkList_Del.h CircularLinkList/CLinkList_Search.c CircularLinkList/CLinkList_Search.h CircularLinkList/Example/JosephusProblem.c CircularLinkList/Example/JosephusProblem.h main.h CircularLinkList/CLinkList_connect.c CircularLinkList/CLinkList_connect.h LinkList/HasLoop.c LinkList/HasLoop.h)

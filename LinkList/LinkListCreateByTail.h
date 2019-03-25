@@ -10,6 +10,8 @@
 #include "stdlib.h"
 #include "time.h"
 
+#define X 4
+
 Status LinkListCreateByTail(LinkList *L,int ElemNum);
 
 #endif //DATASTRUCTURE_LINKLISTCREATEBYTAIL_H

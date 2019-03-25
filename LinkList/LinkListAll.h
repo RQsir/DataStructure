@@ -12,5 +12,6 @@
 #include "LinkListCreateByTail.h"
 #include "LinkListDestroy.h"
 #include "Examples/GetMiddleNode.h"
+#include "HasLoop.h"
 
 #endif //DATASTRUCTURE_LINKLISTALL_H
